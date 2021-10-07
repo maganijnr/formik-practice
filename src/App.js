@@ -1,7 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
-import HandlingSubmission from './components/HandlingSubmission'
-import ManagingData from './components/ManagingData'
+import FormValidation from './components/Lesson-One/FormValidation'
+import HandlingSubmission from './components/Lesson-One/HandlingSubmission'
+import ManagingData from './components/Lesson-One/ManagingData'
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <BrowserRouter>
         <Route exact path="/" component={ManagingData}/>
         <Route exact path="/handling" component={HandlingSubmission}/>
+        <Route exact path="/simple-validation" component={FormValidation}/>
       </BrowserRouter>
       
     </>
